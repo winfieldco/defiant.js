@@ -6,6 +6,17 @@ DefiantJS also extends the global object __JSON__ with the method "__search__", 
 
 For detailed information, please visit [defiantjs.com](http://defiantjs.com) and try out the [XPath Evaluator](http://www.defiantjs.com/#xpath_evaluator).
 
+###Development
+
+Make edits to files in the src directory.
+
+When ready to build, enter the directory and run:
+
+	npm install
+	grunt
+	
+The compiled source will be in lib/defiant.js	
+
 ###Example usage
 * Snapshots - very large JSON
 ```js

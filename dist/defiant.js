@@ -662,7 +662,12 @@ Defiant.node.selectNodes = function(XNode, XPath) {
 		}
 		return res;
 	} else {
-		return XNode.selectNodes(XPath);
+		if(XNode.selectNodes) {
+			return XNode.selectNodes(XPath);
+		}
+		else {
+			return xpath.select(XPath, XNode);
+		}
 	}
 };
 Defiant.node.selectSingleNode = function(XNode, XPath) {
