@@ -11,12 +11,12 @@ Defiant.node.selectNodes = function(XNode, XPath) {
 		}
 		return res;
 	} else {
-		if(XNode.selectNodes) {
+		if(typeof xpath === 'undefined') {
 			return XNode.selectNodes(XPath);
 		}
 		else {
 			return xpath.select(XPath, XNode);
-		}
+		}		
 	}
 };
 Defiant.node.selectSingleNode = function(XNode, XPath) {
