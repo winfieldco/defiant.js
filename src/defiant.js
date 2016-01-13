@@ -1,6 +1,6 @@
 
 if (typeof module === "undefined") {
-	var module = { exports: undefined };
+	module = { exports: undefined };
 } else {
 	// Node env adaptation goes here...
 }
